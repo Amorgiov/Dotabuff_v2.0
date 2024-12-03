@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DotaBuffClone.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DotaBuffClone.props",
+      "PackagePath": "build\\DotaBuffClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DotaBuffClone.props",
+      "PackagePath": "buildMultiTargeting\\DotaBuffClone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DotaBuffClone.props",
+      "PackagePath": "buildTransitive\\DotaBuffClone.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

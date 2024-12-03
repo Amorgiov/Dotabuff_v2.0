@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Heroes</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/script.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">DotaBuffClone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Heroes">Heroes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Items">Items</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Profile">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1>Heroes</h1>
+        <div class="mb-3">
+            <input id="hero-search" class="form-control" type="text" placeholder="Search heroes...">
+        </div>
+        <div class="row">
+            @foreach (var hero in Model)
+            {
+                <div class="col-md-4 hero-card" data-name="@hero.Name">
+                    <div class="card bg-secondary text-light mb-3">
+                        <img src="@hero.ImageUrl" class="card-img-top" alt="@hero.Name" />
+                        <div class="card-body">
+                            <h5 class="card-title">@hero.Name</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+
+</html>
+#212529

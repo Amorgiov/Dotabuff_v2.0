@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "Yo3uQfXduijiGt7FhFqmMyshmuFiWfaNEaARTcuEcZs=",
+  "Source": "DotaBuffClone",
+  "BasePath": "_content/DotaBuffClone",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DotaBuffClone\\wwwroot",
+      "Source": "DotaBuffClone",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\",
+      "BasePath": "_content/DotaBuffClone",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\css\\style.css",
+      "SourceId": "DotaBuffClone",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\",
+      "BasePath": "_content/DotaBuffClone",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\js\\script.js",
+      "SourceId": "DotaBuffClone",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\",
+      "BasePath": "_content/DotaBuffClone",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
+    }
+  ]
+}

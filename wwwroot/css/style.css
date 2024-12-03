@@ -1,0 +1,35 @@
+﻿body {
+    background: #212529;
+}
+
+/* Уменьшение размера карточек */
+.card {
+    width: 150px; /* Уменьшить ширину */
+    height: 150px; /* Уменьшить высоту */
+    margin: 10px; /* Отступы между карточками */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #424242; /* Цвет карточки */
+    border-radius: 10px; /* Закругленные углы */
+    overflow: hidden;
+}
+
+/* Уменьшение размера изображений */
+.card img {
+    width: 100px; /* Уменьшить размер изображения */
+    height: 100px; /* Сохранить пропорции */
+    object-fit: cover; /* Обрезать, если нужно */
+    border-radius: 5px;
+}
+
+/* Название героя */
+.card .hero-name {
+    font-size: 14px; /* Уменьшить шрифт */
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
