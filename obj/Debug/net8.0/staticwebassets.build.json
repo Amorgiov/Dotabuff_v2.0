@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yo3uQfXduijiGt7FhFqmMyshmuFiWfaNEaARTcuEcZs=",
+  "Hash": "Kpxq1zr7Hn6SzcrDhZXOWfdVMABEeo6NAdn0sxTtFhw=",
   "Source": "DotaBuffClone",
   "BasePath": "_content/DotaBuffClone",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "DotaBuffClone\\wwwroot",
       "Source": "DotaBuffClone",
-      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\",
       "BasePath": "_content/DotaBuffClone",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\css\\heroes.css",
       "SourceId": "DotaBuffClone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\",
       "BasePath": "_content/DotaBuffClone",
-      "RelativePath": "css/style.css",
+      "RelativePath": "css/heroes.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\style.css"
+      "OriginalItemSpec": "wwwroot\\css\\heroes.css"
     },
     {
-      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\js\\script.js",
+      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\css\\items.css",
       "SourceId": "DotaBuffClone",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\",
       "BasePath": "_content/DotaBuffClone",
-      "RelativePath": "js/script.js",
+      "RelativePath": "css/items.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,7 +52,45 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\script.js"
+      "OriginalItemSpec": "wwwroot\\css\\items.css"
+    },
+    {
+      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\js\\heroes.js",
+      "SourceId": "DotaBuffClone",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\",
+      "BasePath": "_content/DotaBuffClone",
+      "RelativePath": "js/heroes.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\heroes.js"
+    },
+    {
+      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\js\\items.js",
+      "SourceId": "DotaBuffClone",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\",
+      "BasePath": "_content/DotaBuffClone",
+      "RelativePath": "js/items.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\items.js"
     }
   ]
 }

@@ -1,12 +1,20 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\css\\style.css",
-      "PackagePath": "staticwebassets\\css\\style.css"
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\css\\heroes.css",
+      "PackagePath": "staticwebassets\\css\\heroes.css"
     },
     {
-      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\wwwroot\\js\\script.js",
-      "PackagePath": "staticwebassets\\js\\script.js"
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\css\\items.css",
+      "PackagePath": "staticwebassets\\css\\items.css"
+    },
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\js\\heroes.js",
+      "PackagePath": "staticwebassets\\js\\heroes.js"
+    },
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\wwwroot\\js\\items.js",
+      "PackagePath": "staticwebassets\\js\\items.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DotaBuffClone.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotaBuffClone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60999fe4e2088c81f1c6241ebf8138e22e199ba1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bd1600a427c3edc52e2152f04dd52d9500eacad")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotaBuffClone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotaBuffClone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "smeAvryWfWQ=",
+  "dgSpecHash": "epkVXLuTFf8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff\\DotaBuffClone.csproj",
+  "projectFilePath": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\DotaBuffClone.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maksim\\.nuget\\packages\\htmlagilitypack\\1.11.45\\htmlagilitypack.1.11.45.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -16,14 +16,11 @@
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.codeanalysis.common\\4.0.0\\microsoft.codeanalysis.common.4.0.0.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.0.0\\microsoft.codeanalysis.csharp.4.0.0.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.codeanalysis.razor\\6.0.0\\microsoft.codeanalysis.razor.6.0.0.nupkg.sha512",
-    "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.0-preview.6.23329.4\\microsoft.data.sqlite.core.8.0.0-preview.6.23329.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0-preview.7.23375.4\\microsoft.entityframeworkcore.8.0.0-preview.7.23375.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0-preview.7.23375.4\\microsoft.entityframeworkcore.abstractions.8.0.0-preview.7.23375.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0-preview.7.23375.4\\microsoft.entityframeworkcore.analyzers.8.0.0-preview.7.23375.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.0-preview.6.23329.4\\microsoft.entityframeworkcore.design.8.0.0-preview.6.23329.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0-preview.7.23375.4\\microsoft.entityframeworkcore.relational.8.0.0-preview.7.23375.4.nupkg.sha512",
-    "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\8.0.0-preview.6.23329.4\\microsoft.entityframeworkcore.sqlite.8.0.0-preview.6.23329.4.nupkg.sha512",
-    "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\8.0.0-preview.6.23329.4\\microsoft.entityframeworkcore.sqlite.core.8.0.0-preview.6.23329.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.0-preview.6.23329.4\\microsoft.entityframeworkcore.tools.8.0.0-preview.6.23329.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0-preview.7.23375.6\\microsoft.extensions.caching.abstractions.8.0.0-preview.7.23375.6.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0-preview.7.23375.6\\microsoft.extensions.caching.memory.8.0.0-preview.7.23375.6.nupkg.sha512",
@@ -41,10 +38,6 @@
     "C:\\Users\\Maksim\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\npgsql\\8.0.0-preview.4\\npgsql.8.0.0-preview.4.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0-preview.7\\npgsql.entityframeworkcore.postgresql.8.0.0-preview.7.nupkg.sha512",
-    "C:\\Users\\Maksim\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.5\\sqlitepclraw.bundle_e_sqlite3.2.1.5.nupkg.sha512",
-    "C:\\Users\\Maksim\\.nuget\\packages\\sqlitepclraw.core\\2.1.5\\sqlitepclraw.core.2.1.5.nupkg.sha512",
-    "C:\\Users\\Maksim\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.5\\sqlitepclraw.lib.e_sqlite3.2.1.5.nupkg.sha512",
-    "C:\\Users\\Maksim\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.5\\sqlitepclraw.provider.e_sqlite3.2.1.5.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Maksim\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
@@ -62,16 +55,6 @@
       "warningLevel": 1,
       "message": "DotaBuffClone зависит от Microsoft.EntityFrameworkCore.Design (>= 8.0.0-preview.5.23302.2), но Microsoft.EntityFrameworkCore.Design 8.0.0-preview.5.23302.2 не найден. Использовано наилучшее приближенное соответствие Microsoft.EntityFrameworkCore.Design 8.0.0-preview.6.23329.4.",
       "libraryId": "Microsoft.EntityFrameworkCore.Design",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "DotaBuffClone зависит от Microsoft.EntityFrameworkCore.Sqlite (>= 8.0.0-preview.5.23302.2), но Microsoft.EntityFrameworkCore.Sqlite 8.0.0-preview.5.23302.2 не найден. Использовано наилучшее приближенное соответствие Microsoft.EntityFrameworkCore.Sqlite 8.0.0-preview.6.23329.4.",
-      "libraryId": "Microsoft.EntityFrameworkCore.Sqlite",
       "targetGraphs": [
         "net8.0"
       ]

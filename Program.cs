@@ -4,6 +4,7 @@ using DotaBuffClone.Models;
 using DotaBuffClone.Data;
 using Microsoft.AspNetCore.Identity;
 using DotaBuffClone.Services;
+using DotaBuffClone.Common.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +20,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
 
-builder.Services.AddScoped<DotabuffParsingService>();
+builder.Services.AddScoped<IDotabuffParsingService, DotabuffParsingService>();
 
 var app = builder.Build();
 

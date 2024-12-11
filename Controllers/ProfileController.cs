@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using DotaBuffClone.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using DotaBuffClone.Data;
 
 namespace DotaBuffClone.Controllers
 {

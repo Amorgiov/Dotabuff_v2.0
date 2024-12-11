@@ -9,27 +9,27 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DotaBuffClone
 build_property.RootNamespace = DotaBuffClone
-build_property.ProjectDir = C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff\
+build_property.ProjectDir = C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff
+build_property.MSBuildProjectDirectory = C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff/Views/Heroes/Index.cshtml]
+[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff_v2.0/Views/Heroes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVyb2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff/Views/Home/Index.cshtml]
+[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff_v2.0/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff/Views/Matches/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xJbmRleC5jc2h0bWw=
+[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff_v2.0/Views/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+[C:/Users/Maksim/OneDrive/Рабочий стол/Dotabuff_v2.0/Views/Items/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

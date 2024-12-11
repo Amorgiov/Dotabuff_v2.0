@@ -1,14 +1,14 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using DotaBuffClone.Common.Interfaces;
 using DotaBuffClone.Services;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DotaBuffClone.Controllers
 {
     public class HeroesController : Controller
     {
-        private readonly DotabuffParsingService _parsingService;
+        private readonly IDotabuffParsingService _parsingService;
 
-        public HeroesController(DotabuffParsingService parsingService)
+        public HeroesController(IDotabuffParsingService parsingService)
         {
             _parsingService = parsingService;
         }
@@ -18,6 +18,5 @@ namespace DotaBuffClone.Controllers
             var heroes = await _parsingService.GetHeroesAsync();
             return View(heroes);
         }
-
     }
 }

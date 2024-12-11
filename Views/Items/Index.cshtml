@@ -1,0 +1,85 @@
+﻿@model List<DotaBuffClone.Models.Item>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/items.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">DotaBuffClone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Heroes">Heroes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Items">Items</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Profile">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="my-4 text-center">Dota 2 Items</h1>
+
+
+    <form id="filterForm">
+        <div class="filter">
+            <label for="timeFilter">Filter by Time:</label>
+            <select id="timeFilter" name="date">
+                <option value="all" selected>All Time</option>
+                <option value="week">This Week</option>
+                <option value="month">This Month</option>
+                <option value="3month">Last 3 Months</option>
+                <option value="6month">Last 6 Months</option>
+                <option value="year">Last 12 Months</option>
+                <option value="season_4">Ranked Season 4</option>
+                <option value="season_3">Ranked Season 3</option>
+                <option value="season_2">Ranked Season 2</option>
+                <option value="season_1">Ranked Season 1</option>
+                <option value="patch_7.37">Patch 7.37</option>
+                <option value="patch_7.36">Patch 7.36</option>
+                <option value="patch_7.35">Patch 7.35</option>
+                <option value="patch_7.34">Patch 7.34</option>
+                <option value="patch_7.33">Patch 7.33</option>
+                <option value="patch_7.32">Patch 7.32</option>
+            </select>
+        </div>
+    </form> 
+
+    <script src="~/js/items.js"></script>
+
+
+    <table>
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Times Used</th>
+            <th>Use Rate</th>
+            <th>Winrate</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="@item.ImageUrl" alt="@item.Name" width="50" height="50" /></td>
+                    <td>@item.Name</td>
+                    <td>@item.TimesUsed</td>
+                    <td>@item.UseRate</td>
+                    <td>@item.Winrate</td>
+                </tr>
+            }
+    </tbody>
+</table>
+</body>
+
+
