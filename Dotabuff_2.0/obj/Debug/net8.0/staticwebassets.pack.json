@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\Dotabuff_2.0.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\Photo\\admin.png",
+      "PackagePath": "staticwebassets\\css\\Photo\\admin.png"
+    },
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\Photo\\cybersport.jpg",
+      "PackagePath": "staticwebassets\\css\\Photo\\cybersport.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\Photo\\dotabackground.png",
+      "PackagePath": "staticwebassets\\css\\Photo\\dotabackground.png"
+    },
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\Photo\\heroes.png",
+      "PackagePath": "staticwebassets\\css\\Photo\\heroes.png"
+    },
+    {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\Photo\\matches.jpg",
+      "PackagePath": "staticwebassets\\css\\Photo\\matches.jpg"
+    },
+    {
       "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },

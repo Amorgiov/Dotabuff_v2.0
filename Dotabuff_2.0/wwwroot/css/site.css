@@ -1,8 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Общие стили для body */
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #2c2f33;
     color: #ecf0f1;
     font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh; /* Заставляет body заполнять всю высоту экрана */
 }
 
 /* Заголовки */
@@ -35,15 +45,17 @@ h1, h2, h3 {
 
 /* Основной контейнер */
 #main-content {
-    min-height: 80vh;
+    flex: 1 0 auto; /* Основной контент растягивается */
 }
 
 /* Footer */
 footer {
+    flex-shrink: 0;
     background-color: #343a40;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
+    margin-top: auto; /* Футер перемещается к низу */
 }
 
 /* Стили для таблиц */
@@ -77,11 +89,15 @@ tr:hover {
 }
 
 img {
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 8px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 2px;
 }
 
+.img-hero {
+    max-width: 40px;
+    max-height: 40px;
+}
 /* Фильтры */
 .filter {
     display: flex;
@@ -202,4 +218,217 @@ img {
 .btn-block {
     display: block;
     width: 100%;
+}
+
+/* Фоновое изображение */
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Photo/dotabackground.png'); /* Путь к изображению */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Применяем эффект размытия */
+    opacity: 0.5;
+    z-index: -1; /* Размещаем фон за содержимым */
+}
+
+#match-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Photo/matches.jpg'); /* Путь к изображению */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Применяем эффект размытия */
+    opacity: 0.5;
+    z-index: -1; /* Размещаем фон за содержимым */
+}
+
+#hero-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Photo/heroes.png'); /* Путь к изображению */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Применяем эффект размытия */
+    opacity: 0.5;
+    z-index: -1; /* Размещаем фон за содержимым */
+}
+
+#item-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Photo/cybersport.jpg'); /* Путь к изображению */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Применяем эффект размытия */
+    opacity: 0.5;
+    z-index: -1; /* Размещаем фон за содержимым */
+}
+
+#admin-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Photo/admin.png'); /* Путь к изображению */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Применяем эффект размытия */
+    opacity: 0.5;
+    z-index: -1; /* Размещаем фон за содержимым */
+}
+
+/* Основной контейнер */
+#main-content {
+    min-height: 80vh;
+}
+
+/* Заголовки */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Оставляем текст видимым после анимации */
+}
+
+/* Выделение текста для DotaBuff 2.0 */
+.highlight-text {
+    color: #7289da; /* Светло-синий цвет */
+    font-weight: bold;
+}
+
+/* Анимация появления для текста */
+.fadeInText {
+    animation: fadeIn 3s ease-in-out forwards; /* Обеспечивает постоянную видимость текста после анимации */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Текст для "Исследуйте героев, предметы, матчи и многое другое!" */
+.blinking-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem; /* Увеличиваем размер шрифта */
+}
+
+.blink-word {
+    display: inline-block;
+    opacity: 0;
+    animation: blink 2s ease-in-out infinite alternate, moveUp 1s forwards;
+    animation-delay: 1s;
+}
+
+    .blink-word:nth-child(1) {
+        animation-delay: 1s;
+    }
+
+    .blink-word:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    .blink-word:nth-child(3) {
+        animation-delay: 3s;
+    }
+
+    .blink-word:nth-child(4) {
+        animation-delay: 4s;
+    }
+
+    .blink-word:nth-child(5) {
+        animation-delay: 5s;
+    }
+
+/* Анимация мигания */
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Анимация подъема */
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Блок с советами по игре */
+.game-tip {
+    position: absolute;
+    bottom: 50px; /* Спускаем блок с советом немного выше */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+}
+
+/* Эффект появления совета */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Эффект скрытия совета */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ps-text {
+    font-size: 1rem; /* Увеличиваем размер шрифта для текста */
+    color: yellow; /* Желтый цвет */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стиль для текста с пометкой бета */
+.beta-text {
+    font-weight: bold;
+    color: yellow; /* Желтый цвет для текста */
+    font-size: 1.1rem; /* Немного увеличиваем размер текста */
+}
+
+/* Стиль для иконки бетатеста */
+.ps-text i {
+    margin-right: 8px;
+    color: yellow;
 }

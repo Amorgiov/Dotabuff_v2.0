@@ -1,19 +1,75 @@
-<!DOCTYPE html>
-
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <html>
 <head>
-    <title>Home</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Для иконок -->
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body class="bg-dark text-light">
-    <div class="container mt-4">
-        <h1>Welcome to DotaBuffClone</h1>
-        <p>Explore heroes, items, and matches!</p>
+    <!-- Фоновое изображение -->
+    <div id="background-image"></div>
+
+    <!-- Основной контент -->
+    <div class="container mt-4" id="main-content">
+        <h1 class="fadeInText" id="welcome-text">Добро пожаловать в <span class="highlight-text">DotaBuff 2.0</span>!!!</h1>
+
+        <h2 id="sub-text" class="text-center mb-4">
+            Мы всегда готовы помочь вам узнать всю последнюю информацию о нововведения в игре Dota 2. Узнайте о новых метовых сборках, узнайте последние матчи про лиги, а также информацию о героях!!!
+        </h2>
+
+        <p class="ps-text">
+            <i class="fas fa-cogs"></i> P.s. <span class="beta-text">Данное приложение находится на стадии бета разработки и может не отображать финальное качество продукта.</span>
+        </p>
+
+        <p class="blinking-text text-center">
+            <span class="blink-word">Исследуйте героев,</span>
+            <span class="blink-word">предметы,</span>
+            <span class="blink-word">матчи</span>
+            <span class="blink-word">и многое другое!</span>
+        </p>
     </div>
+
+    <!-- Блок с советами по игре -->
+    <div id="game-tip" class="game-tip"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Список советов
+        const tips = [
+            "Используйте карту, чтобы отслеживать передвижение врагов. Это поможет своевременно реагировать на разные ситуации.",
+            "Всегда старайтесь подбирать предметы согласно своей роли, иначе вы можете получить плохую порядочность, а если не знаете что собирать, всегда есть раздел сборки.",
+            "Хороший лайнинг - залог успеха. Также не забывайте про позиционку.",
+            "DOTA 2 - командная игра. В соло уже давно не выйграть. Старайтесь как можно больше взаимодействовать с командой.",
+            "Если у врагов есть инвиз в команде, не забывайте о таких предметах, как дасты и варды. Синие глазики всегда полезны.",
+            "Никогда не сдавайтесь и старайтесь отыгрывать на ошибках врагов!",
+            "Учитесь использовать способности вашего героя в комбо для максимальной эффективности.",
+            "Ранний контроль карты – залог успешной игры.",
+        ];
+
+        // Функция для случайного выбора совета
+        function getRandomTip() {
+            const randomIndex = Math.floor(Math.random() * tips.length);
+            return tips[randomIndex];
+        }
+
+        // Функция для показа совета
+        function showTip() {
+            const tip = getRandomTip();
+            const tipElement = document.getElementById('game-tip');
+            tipElement.innerHTML = `<div class="alert alert-info" role="alert">${tip}</div>`;
+            tipElement.style.display = 'block';
+            tipElement.style.animation = 'fadeIn 2s ease-out';
+        }
+
+        // Смена совета через 5 секунд
+        setInterval(showTip, 5000); // Каждый 5 секунд меняем совет
+
+        // Показать первый совет при загрузке страницы
+        window.onload = showTip;
+    </script>
 </body>
 </html>
