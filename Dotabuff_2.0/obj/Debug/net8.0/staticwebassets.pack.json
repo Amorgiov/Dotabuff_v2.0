@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Dotabuff_2.0.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Dotabuff_2.0.bundle.scp.css"
+    },
+    {
       "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },

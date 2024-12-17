@@ -90,12 +90,6 @@ namespace Dotabuff_2._0.Services
         // Метод для получения предметов из БД или через парсинг
         public async Task<List<Item>> GetItemsAsync(string dateFilter = "all")
         {
-            if (await _context.Items.AnyAsync())
-            {
-                _logger.LogInformation("Загрузка предметов из базы данных.");
-                return await _context.Items.ToListAsync();
-            }
-
             _logger.LogInformation("Данные предметов отсутствуют в базе данных. Начинается парсинг.");
             await ParseAndSaveItemsAsync(dateFilter);
             return await _context.Items.ToListAsync();

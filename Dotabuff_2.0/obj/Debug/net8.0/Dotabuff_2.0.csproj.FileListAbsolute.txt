@@ -283,3 +283,5 @@ C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0\Dotabuff_2.0\obj\
 C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0\Dotabuff_2.0\obj\Debug\net8.0\Dotabuff_2.0.pdb
 C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0\Dotabuff_2.0\obj\Debug\net8.0\Dotabuff_2.0.genruntimeconfig.cache
 C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0\Dotabuff_2.0\obj\Debug\net8.0\ref\Dotabuff_2.0.dll
+C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0\Dotabuff_2.0\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Maksim\OneDrive\Рабочий стол\Dotabuff_v2.0\Dotabuff_2.0\obj\Debug\net8.0\scopedcss\projectbundle\Dotabuff_2.0.bundle.scp.css
