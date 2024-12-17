@@ -8,7 +8,6 @@ namespace Dotabuff_2._0.Models
         public string League { get; set; }
         public string MatchId { get; set; }
         public string Date { get; set; }
-        [AllowNull]
         public string Series { get; set; }
         public string RadiantTeam { get; set; }
         public string DireTeam { get; set; }

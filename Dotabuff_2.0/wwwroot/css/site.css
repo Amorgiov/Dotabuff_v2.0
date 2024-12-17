@@ -59,7 +59,8 @@ table {
 th, td {
     border: 1px solid #4e5257;
     padding: 12px;
-    text-align: left;
+    text-align: center;
+    white-space: nowrap;
 }
 
 th {
@@ -196,4 +197,9 @@ img {
 
 .btn-danger:hover {
     background-color: #c03939;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
 }
