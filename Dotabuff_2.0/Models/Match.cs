@@ -12,5 +12,10 @@ namespace Dotabuff_2._0.Models
         public string RadiantTeam { get; set; }
         public string DireTeam { get; set; }
         public string Duration { get; set; }
+
+        // Новые свойства для хранения URL иконок героев
+        public List<string> RadiantHeroes { get; set; } = new List<string>();
+        public List<string> DireHeroes { get; set; } = new List<string>();
     }
+
 }

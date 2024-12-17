@@ -216,7 +216,6 @@ namespace Dotabuff_2._0.Services
             htmlDoc.LoadHtml(content);
 
             var matchRows = htmlDoc.DocumentNode.SelectNodes("//table[contains(@class, 'recent-esports-matches')]//tbody//tr");
-
             if (matchRows != null && matchRows.Count > 0)
             {
                 foreach (var row in matchRows)
@@ -228,13 +227,24 @@ namespace Dotabuff_2._0.Services
                         var dateNode = row.SelectSingleNode(".//td[3]//time");
                         var seriesNode = row.SelectSingleNode(".//td[contains(@class, 'r-none-mobile')]//a");
                         var seriesAdditionalNode = row.SelectSingleNode(".//td[contains(@class, 'r-none-mobile')]//small");
-                        var radiantTeamNode = row.SelectNodes(".//td[contains(@class, 'cell-xlarge r-none-mobile')]")[1]?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
-                        var direTeamNode = row.SelectNodes(".//td[contains(@class, 'cell-xlarge r-none-mobile')]")[0]?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
-                        var durationNode = row.SelectSingleNode(".//td[last()]");
 
+                        // Ячейки команд. Предположим, что:
+                        // [0] - Dire Team (winner или loser)
+                        // [1] - Radiant Team
+                        // В зависимости от того, как структурирована страница, возможно придется поменять местами индексы.
+                        var teamCells = row.SelectNodes(".//td[contains(@class, 'cell-xlarge r-none-mobile')]");
+
+                        var direCell = teamCells?[0];
+                        var radiantCell = teamCells?[1];
+
+                        // Для Series
                         var series = seriesNode?.InnerText.Trim();
                         var seriesAdditional = seriesAdditionalNode?.InnerText.Trim();
                         var fullSeries = !string.IsNullOrEmpty(seriesAdditional) ? $"{series} ({seriesAdditional})" : series;
+
+                        // Извлекаем название команд
+                        var radiantTeamNode = radiantCell?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
+                        var direTeamNode = direCell?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
 
                         var match = new Match
                         {
@@ -244,8 +254,36 @@ namespace Dotabuff_2._0.Services
                             Series = fullSeries,
                             RadiantTeam = radiantTeamNode?.InnerText.Trim(),
                             DireTeam = direTeamNode?.InnerText.Trim(),
-                            Duration = durationNode?.InnerText.Split('\n').FirstOrDefault()?.Trim()
+                            Duration = row.SelectSingleNode(".//td[last()]")?.InnerText.Split('\n').FirstOrDefault()?.Trim()
                         };
+
+                        // Парсим иконки героев для Radiant
+                        var radiantHeroImages = radiantCell?.SelectNodes(".//img[contains(@class, 'img-icon')]");
+                        if (radiantHeroImages != null)
+                        {
+                            foreach (var imgNode in radiantHeroImages)
+                            {
+                                var src = "https://www.dotabuff.com/" + imgNode.GetAttributeValue("src", "");
+                                if (!string.IsNullOrEmpty(src))
+                                {
+                                    match.RadiantHeroes.Add(src);
+                                }
+                            }
+                        }
+
+                        // Парсим иконки героев для Dire
+                        var direHeroImages = direCell?.SelectNodes(".//img[contains(@class, 'img-icon')]");
+                        if (direHeroImages != null)
+                        {
+                            foreach (var imgNode in direHeroImages)
+                            {
+                                var src = "https://www.dotabuff.com/" + imgNode.GetAttributeValue("src", "");
+                                if (!string.IsNullOrEmpty(src))
+                                {
+                                    match.DireHeroes.Add(src);
+                                }
+                            }
+                        }
 
                         matches.Add(match);
                     }
@@ -268,6 +306,7 @@ namespace Dotabuff_2._0.Services
             {
                 _logger.LogWarning($"Матчи не найдены на странице {page}. Перенаправление на первую страницу.");
             }
+
         }
 
 
