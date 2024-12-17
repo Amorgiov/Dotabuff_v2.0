@@ -14,5 +14,6 @@ namespace Dotabuff_2._0.Data
 
         public DbSet<Hero> Heroes { get; set; }
         public DbSet<Item> Items { get; set; }
+        public DbSet<Match> Matches { get; set; }
     }
 }

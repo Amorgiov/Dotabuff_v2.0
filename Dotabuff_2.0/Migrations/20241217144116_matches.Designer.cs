@@ -3,6 +3,7 @@ using System;
 using Dotabuff_2._0.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Dotabuff_2._0.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241217144116_matches")]
+    partial class matches
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -78,11 +81,8 @@ namespace Dotabuff_2._0.Migrations
 
             modelBuilder.Entity("Dotabuff_2._0.Models.Match", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    b.Property<string>("MatchId")
+                        .HasColumnType("text");
 
                     b.Property<string>("Date")
                         .IsRequired()
@@ -100,11 +100,11 @@ namespace Dotabuff_2._0.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("MatchId")
+                    b.Property<string>("RadiantTeam")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("RadiantTeam")
+                    b.Property<string>("Region")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -112,7 +112,7 @@ namespace Dotabuff_2._0.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.HasKey("MatchId");
 
                     b.ToTable("Matches");
                 });

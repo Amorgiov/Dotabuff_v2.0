@@ -1,0 +1,43 @@
+﻿@model List<Match>
+@{
+    ViewBag.Title = "Esports Matches";
+    var currentPage = ViewBag.CurrentPage;
+}
+
+<h2>Esports Matches</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>League</th>
+            <th>Match ID</th>
+            <th>Date</th>
+            <th>Series</th>
+            <th>Radiant Team</th>
+            <th>Dire Team</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var match in Model)
+        {
+            <tr>
+                <td>@match.League</td>
+                <td>@match.MatchId</td>
+                <td>@match.Date</td>
+                <td>@match.Series</td>
+                <td>@match.RadiantTeam</td>
+                <td>@match.DireTeam</td>
+                <td>@match.Duration</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="pagination">
+    @if (currentPage > 1)
+    {
+        <a href="@Url.Action("Index", new { page = currentPage - 1 })" class="btn btn-primary">Previous</a>
+    }
+    <a href="@Url.Action("Index", new { page = currentPage + 1 })" class="btn btn-primary">Next</a>
+</div>
