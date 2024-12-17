@@ -13,12 +13,14 @@ namespace Dotabuff_2._0.Services
         private readonly HttpClient _httpClient;
         private readonly ApplicationDbContext _context;
         private readonly ILogger<DotabuffParsingService> _logger;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public DotabuffParsingService(HttpClient httpClient, ApplicationDbContext context, ILogger<DotabuffParsingService> logger)
+        public DotabuffParsingService(HttpClient httpClient, ApplicationDbContext context, ILogger<DotabuffParsingService> logger, IHttpContextAccessor httpContextAccessor)
         {
             _httpClient = httpClient;
             _context = context;
             _logger = logger;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         // Метод для получения героев из БД или через парсинг
@@ -187,11 +189,24 @@ namespace Dotabuff_2._0.Services
             request.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
             request.Headers.Add("Accept-Language", "en-US,en;q=0.9");
 
-            var response = await _httpClient.SendAsync(request);
+            HttpResponseMessage response;
 
-            if (!response.IsSuccessStatusCode)
+            try
             {
-                _logger.LogError($"Ошибка при запросе страницы {page}: {response.StatusCode}");
+                response = await _httpClient.SendAsync(request);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    _logger.LogError($"Ошибка при запросе страницы {page}: {response.StatusCode}");
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Ошибка при выполнении запроса: {ex.Message}");
+
+                // Перенаправление на первую страницу
+                _httpContextAccessor.HttpContext.Response.Redirect("https://localhost:5000/Matches?page=1");
                 return;
             }
 
@@ -206,32 +221,39 @@ namespace Dotabuff_2._0.Services
             {
                 foreach (var row in matchRows)
                 {
-                    var leagueNode = row.SelectSingleNode(".//a[contains(@class, 'esports-league')]//span[contains(@class, 'league-text')]");
-                    var matchIdNode = row.SelectSingleNode(".//td[3]//a");
-                    var dateNode = row.SelectSingleNode(".//td[3]//time");
-                    var seriesNode = row.SelectSingleNode(".//td[contains(@class, 'r-none-mobile')]//a");
-                    var seriesAdditionalNode = row.SelectSingleNode(".//td[contains(@class, 'r-none-mobile')]//small");
-                    var radiantTeamNode = row.SelectNodes(".//td[contains(@class, 'cell-xlarge r-none-mobile')]")[1]?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
-                    var direTeamNode = row.SelectNodes(".//td[contains(@class, 'cell-xlarge r-none-mobile')]")[0]?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
-                    var durationNode = row.SelectSingleNode(".//td[last()]");
-
-                    // Комбинируем Series и дополнительный блок
-                    var series = seriesNode?.InnerText.Trim();
-                    var seriesAdditional = seriesAdditionalNode?.InnerText.Trim();
-                    var fullSeries = !string.IsNullOrEmpty(seriesAdditional) ? $"{series} ({seriesAdditional})" : series;
-
-                    var match = new Match
+                    try
                     {
-                        League = leagueNode?.InnerText.Trim(),
-                        MatchId = matchIdNode?.InnerText.Trim(),
-                        Date = dateNode?.GetAttributeValue("datetime", string.Empty).Trim(),
-                        Series = fullSeries,
-                        RadiantTeam = radiantTeamNode?.InnerText.Trim(),
-                        DireTeam = direTeamNode?.InnerText.Trim(),
-                        Duration = durationNode?.InnerText.Split('\n').FirstOrDefault()?.Trim()
-                    };
+                        var leagueNode = row.SelectSingleNode(".//a[contains(@class, 'esports-league')]//span[contains(@class, 'league-text')]");
+                        var matchIdNode = row.SelectSingleNode(".//td[3]//a");
+                        var dateNode = row.SelectSingleNode(".//td[3]//time");
+                        var seriesNode = row.SelectSingleNode(".//td[contains(@class, 'r-none-mobile')]//a");
+                        var seriesAdditionalNode = row.SelectSingleNode(".//td[contains(@class, 'r-none-mobile')]//small");
+                        var radiantTeamNode = row.SelectNodes(".//td[contains(@class, 'cell-xlarge r-none-mobile')]")[1]?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
+                        var direTeamNode = row.SelectNodes(".//td[contains(@class, 'cell-xlarge r-none-mobile')]")[0]?.SelectSingleNode(".//span[contains(@class, 'team-text-full')]");
+                        var durationNode = row.SelectSingleNode(".//td[last()]");
 
-                    matches.Add(match);
+                        var series = seriesNode?.InnerText.Trim();
+                        var seriesAdditional = seriesAdditionalNode?.InnerText.Trim();
+                        var fullSeries = !string.IsNullOrEmpty(seriesAdditional) ? $"{series} ({seriesAdditional})" : series;
+
+                        var match = new Match
+                        {
+                            League = leagueNode?.InnerText.Trim(),
+                            MatchId = matchIdNode?.InnerText.Trim(),
+                            Date = dateNode?.GetAttributeValue("datetime", string.Empty).Trim(),
+                            Series = fullSeries,
+                            RadiantTeam = radiantTeamNode?.InnerText.Trim(),
+                            DireTeam = direTeamNode?.InnerText.Trim(),
+                            Duration = durationNode?.InnerText.Split('\n').FirstOrDefault()?.Trim()
+                        };
+
+                        matches.Add(match);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogWarning($"Ошибка при обработке строки матча: {ex.Message}");
+                        _httpContextAccessor.HttpContext.Response.Redirect("https://localhost:7109/Matches?page=1");
+                    }
                 }
 
                 _logger.LogInformation($"Спарсено {matches.Count} матчей на странице {page}.");
@@ -244,9 +266,11 @@ namespace Dotabuff_2._0.Services
             }
             else
             {
-                _logger.LogWarning("Не удалось найти матчи на странице для парсинга.");
+                _logger.LogWarning($"Матчи не найдены на странице {page}. Перенаправление на первую страницу.");
             }
         }
+
+
 
 
         // Метод для обновления и героев, и предметов

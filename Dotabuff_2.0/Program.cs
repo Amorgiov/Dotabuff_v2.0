@@ -24,6 +24,7 @@ namespace Dotabuff_2._0
 
             builder.Services.AddScoped<IDotabuffParsingService, DotabuffParsingService>();
             builder.Services.AddHttpClient<IDotabuffParsingService, DotabuffParsingService>();
+            builder.Services.AddHttpContextAccessor();
 
             var app = builder.Build();
 
