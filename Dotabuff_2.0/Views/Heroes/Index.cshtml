@@ -27,14 +27,20 @@
             <div class="row">
                 @foreach (var hero in Model)
                 {
-                    <div class="col-md-4 hero-card" data-name="@hero.Name">
-                        <div class="card bg-secondary text-light mb-3">
+                <div class="col-md-4 hero-card" data-name="@hero.Name">
+                    <div class="card bg-secondary text-light mb-3">
+                        <a href="https://www.dota2.com/hero/@hero.Name" target="_blank" class="text-decoration-none">
                             <img src="@hero.ImageUrl" class="card-img-top" alt="@hero.Name" />
-                            <div class="card-body">
-                                <h5 class="card-title">@hero.Name</h5>
-                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://www.dota2.com/hero/@hero.Name" target="_blank" class="text-decoration-none text-light">
+                                    @hero.Name
+                                </a>
+                            </h5>
                         </div>
                     </div>
+                </div>
                 }
             </div>
         </div>

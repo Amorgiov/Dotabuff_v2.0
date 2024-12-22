@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|c:\\users\\maksim\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dotabuff_v2.0\\dotabuff_2.0\\views\\heroes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|solutionrelative:dotabuff_2.0\\views\\heroes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|c:\\users\\maksim\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dotabuff_v2.0\\dotabuff_2.0\\models\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|solutionrelative:dotabuff_2.0\\models\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|c:\\users\\maksim\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dotabuff_v2.0\\dotabuff_2.0\\controllers\\heroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|solutionrelative:dotabuff_2.0\\controllers\\heroescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|c:\\users\\maksim\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dotabuff_v2.0\\dotabuff_2.0\\services\\dotabuffparsingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|solutionrelative:dotabuff_2.0\\services\\dotabuffparsingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|c:\\users\\maksim\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\dotabuff_v2.0\\dotabuff_2.0\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{CC941CE2-23E4-4786-BAA4-90EB70D29E89}|Dotabuff_2.0\\Dotabuff_2.0.csproj|solutionrelative:dotabuff_2.0\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -18,15 +34,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
@@ -34,7 +50,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HeroesController.cs",
+              "DocumentMoniker": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Controllers\\HeroesController.cs",
+              "RelativeDocumentMoniker": "Dotabuff_2.0\\Controllers\\HeroesController.cs",
+              "ToolTip": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Controllers\\HeroesController.cs",
+              "RelativeToolTip": "Dotabuff_2.0\\Controllers\\HeroesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T20:26:34.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Hero.cs",
+              "DocumentMoniker": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Models\\Hero.cs",
+              "RelativeDocumentMoniker": "Dotabuff_2.0\\Models\\Hero.cs",
+              "ToolTip": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Models\\Hero.cs",
+              "RelativeToolTip": "Dotabuff_2.0\\Models\\Hero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T20:26:27.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Views\\Heroes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Dotabuff_2.0\\Views\\Heroes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Views\\Heroes\\Index.cshtml",
+              "RelativeToolTip": "Dotabuff_2.0\\Views\\Heroes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T20:26:20.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DotabuffParsingService.cs",
+              "DocumentMoniker": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Services\\DotabuffParsingService.cs",
+              "RelativeDocumentMoniker": "Dotabuff_2.0\\Services\\DotabuffParsingService.cs",
+              "ToolTip": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Services\\DotabuffParsingService.cs",
+              "RelativeToolTip": "Dotabuff_2.0\\Services\\DotabuffParsingService.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAIwEIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T20:25:55.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\Views\\Matches\\Index.cshtml",
               "RelativeDocumentMoniker": "Dotabuff_2.0\\Views\\Matches\\Index.cshtml",
@@ -42,18 +110,17 @@
               "RelativeToolTip": "Dotabuff_2.0\\Views\\Matches\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T16:43:01.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T16:43:01.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Dotabuff_2.0\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Maksim\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Dotabuff_2.0\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAA8BAAAAAAAAAAAmwCEBAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAmwBwBAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-12-17T17:08:42.807Z",
               "EditorCaption": ""
