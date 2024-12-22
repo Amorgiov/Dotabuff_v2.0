@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1cvWIy85IQYd0Zpr2gyjZk3v94taFEeD5eQMUkz0u/8=",
+  "Hash": "SIoJGHqHunxqZYW/NTw2Htq05Oq5cjoq8T1sdgsilnA=",
   "Source": "Dotabuff_2.0",
   "BasePath": "_content/Dotabuff_2.0",
   "Mode": "Default",
@@ -1402,6 +1402,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\img\\icons8-дота-2-gradient-512.png",
+      "SourceId": "Dotabuff_2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\",
+      "BasePath": "_content/Dotabuff_2.0",
+      "RelativePath": "img/icons8-дота-2-gradient-512.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons8-дота-2-gradient-512.png"
     },
     {
       "Identity": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\js\\admin.js",

@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\img\\icons8-дота-2-gradient-512.png",
+      "PackagePath": "staticwebassets\\img\\icons8-дота-2-gradient-512.png"
+    },
+    {
       "Id": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\wwwroot\\js\\admin.js",
       "PackagePath": "staticwebassets\\js\\admin.js"
     },
