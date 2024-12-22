@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dotabuff_2.0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+443160a082a5d2be2bb6fb825dbd7c229dea673d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+431cd975c09b1f3a49299d17d058a1d6fdff6f5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dotabuff_2.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dotabuff_2.0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

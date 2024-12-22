@@ -1,8 +1,10 @@
 ﻿using Dotabuff_2._0.Common.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dotabuff_2._0.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly IDotabuffParsingService _parsingService;
@@ -11,6 +13,7 @@ namespace Dotabuff_2._0.Controllers
         {
             _parsingService = parsingService;
         }
+
 
         public IActionResult Index()
         {
