@@ -7,6 +7,7 @@
         heroCards.forEach(card => {
             const heroName = card.dataset.name.toLowerCase();
             card.style.display = heroName.includes(query) ? 'block' : 'none';
+
         });
     });
 });

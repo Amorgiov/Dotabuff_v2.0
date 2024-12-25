@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj": {}
+    "C:\\Users\\user\\Desktop\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj": {
+    "C:\\Users\\user\\Desktop\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj",
         "projectName": "Dotabuff_2.0",
-        "projectPath": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj",
-        "packagesPath": "C:\\Users\\Maksim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maksim\\OneDrive\\Рабочий стол\\Dotabuff_v2.0\\Dotabuff_2.0\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Dotabuff_v2.0\\Dotabuff_2.0\\Dotabuff_2.0.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Dotabuff_v2.0\\Dotabuff_2.0\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Progr\\VisualStudio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Maksim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -110,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

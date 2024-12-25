@@ -1,21 +1,12 @@
 ﻿<!DOCTYPE html>
-
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
 <html>
 <head>
     <title>Heroes</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Для иконок -->
-    @* <link rel="stylesheet" href="~/css/heroes.css"> *@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="~/css/site.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/heroes.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
             background: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg') no-repeat center center fixed;
@@ -34,65 +25,83 @@
             margin: 0 auto 20px;
         }
 
-        .hero-card img {
-            transition: transform 0.3s ease, filter 0.3s ease;
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border: 3px solid rgba(255, 255, 255, 0.5);
+        .hero-card {
+            transition: opacity 1.5s ease, transform 1.5s ease;
         }
 
-        .hero-card:hover img {
-            transform: scale(1.2);
-            filter: brightness(1.2);
-        }
+            .hero-card.hidden {
+                opacity: 0;
+                transform: scale(0.5);
+                pointer-events: none;
+                position: absolute;
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
 
-        .hero-card img:not(:hover) {
-            filter: brightness(0.8);
-        }
+            .hero-card img {
+                transition: transform 1.5s ease, filter 1.5s ease;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border: 3px solid rgba(255, 255, 255, 0.5);
+            }
 
-        .hero-card .card {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            border: none;
-            border-radius: 15px;
-            padding: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
+            .hero-card:hover img {
+                transform: scale(1.3);
+                filter: brightness(1.4);
+            }
 
-        .hero-card:hover .card {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-        }
+            .hero-card img:not(:hover) {
+                filter: brightness(0.9);
+            }
 
-        .hero-card .card-title {
-            font-size: 1em;
-            font-weight: bold;
-            margin-top: 10px;
-        }
+            .hero-card .card {
+                text-align: center;
+                background: rgba(0, 0, 0, 0.7);
+                border: none;
+                border-radius: 15px;
+                padding: 15px;
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+                transition: all 1.5s ease;
+            }
 
-        .hero-card a {
-            text-decoration: none;
-            color: white;
-        }
+            .hero-card:hover .card {
+                transform: translateY(-8px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            }
+
+            .hero-card .card-title {
+                font-size: 1.1em;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            .hero-card a {
+                text-decoration: none;
+                color: white;
+            }
 
         .row {
             justify-content: center;
             gap: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
         }
     </style>
 </head>
 <body>
     <div id="hero-image"></div>
-
     <div class="container mt-4">
         <h1>Heroes</h1>
         <div class="mb-3">
             <input id="hero-search" class="form-control" type="text" placeholder="Search heroes...">
         </div>
-        <div class="row">
+        <div class="row" id="hero-container">
             @foreach (var hero in Model)
             {
                 var heroUrlName = hero.Name.Replace(" ", "");
@@ -109,5 +118,23 @@
             }
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#hero-search').on('input', function () {
+                var query = $(this).val().toLowerCase();
+
+                $('.hero-card').each(function () {
+                    var card = $(this);
+                    var heroName = card.data('name').toLowerCase();
+                    if (heroName.includes(query)) {
+                        card.removeClass('hidden');
+                    } else {
+                        card.addClass('hidden');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -39,9 +39,9 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #cccccc;
-}
+    .navbar-nav .nav-link:hover {
+        color: #cccccc;
+    }
 
 /* Основной контейнер */
 #main-content {
@@ -105,29 +105,29 @@ img {
     margin-bottom: 20px;
 }
 
-.filter label {
-    font-weight: bold;
-    color: #fff;
-    margin-right: 10px;
-    font-size: 16px;
-}
+    .filter label {
+        font-weight: bold;
+        color: #fff;
+        margin-right: 10px;
+        font-size: 16px;
+    }
 
-.filter select {
-    background-color: #2c2f33;
-    color: #fff;
-    border: 1px solid #444;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 4px;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
+    .filter select {
+        background-color: #2c2f33;
+        color: #fff;
+        border: 1px solid #444;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
 
-.filter select:hover,
-.filter select:focus {
-    border-color: #7289da;
-    box-shadow: 0 0 5px rgba(114, 137, 218, 0.7);
-}
+        .filter select:hover,
+        .filter select:focus {
+            border-color: #7289da;
+            box-shadow: 0 0 5px rgba(114, 137, 218, 0.7);
+        }
 
 /* Стили для карточек героев */
 .card {
@@ -143,19 +143,19 @@ img {
     overflow: hidden;
 }
 
-.card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
-}
+    .card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
 
-.card .hero-name {
-    font-size: 14px;
-    color: #fff;
-    margin-top: 5px;
-    text-align: center;
-}
+    .card .hero-name {
+        font-size: 14px;
+        color: #fff;
+        margin-top: 5px;
+        text-align: center;
+    }
 
 /* Стили для кнопок в админ-панели */
 .admin-actions {
@@ -193,27 +193,27 @@ img {
     color: #fff;
 }
 
-.btn-primary:hover {
-    background-color: #5b6eae;
-}
+    .btn-primary:hover {
+        background-color: #5b6eae;
+    }
 
 .btn-success {
     background-color: #43b581;
     color: #fff;
 }
 
-.btn-success:hover {
-    background-color: #369666;
-}
+    .btn-success:hover {
+        background-color: #369666;
+    }
 
 .btn-danger {
     background-color: #f04747;
     color: #fff;
 }
 
-.btn-danger:hover {
-    background-color: #c03939;
-}
+    .btn-danger:hover {
+        background-color: #c03939;
+    }
 
 .btn-block {
     display: block;
