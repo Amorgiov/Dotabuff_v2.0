@@ -1,4 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
 
@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace Dotabuff_2._0.Areas.Identity.Pages.Account.Manage
 {
@@ -30,6 +31,11 @@ namespace Dotabuff_2._0.Areas.Identity.Pages.Account.Manage
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
         public string Username { get; set; }
+        public string Surname { get; set; }
+        public string Patronymic { get; set; }
+        public string Organization { get; set; }
+        public string Email { get; set; }
+
 
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -62,10 +68,14 @@ namespace Dotabuff_2._0.Areas.Identity.Pages.Account.Manage
 
         private async Task LoadAsync(IdentityUser user)
         {
+            var current = await _userManager.GetUserAsync(User);
+
             var userName = await _userManager.GetUserNameAsync(user);
+            var email = current.Email;
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
             Username = userName;
+            Email = email;
 
             Input = new InputModel
             {
